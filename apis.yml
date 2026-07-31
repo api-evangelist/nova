@@ -1,8 +1,26 @@
 aid: nova
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nova.png
 name: Nova
-description: 'Nova is a company surfaced as a portfolio company of accel, battery-ventures and added to
-  the API Evangelist network as a stub for enrichment. Sector: ai. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Nova (Nova Intelligence) is an agentic AI platform for SAP teams, used in production across
+  documentation, functional design, development, and production issue resolution. Its capabilities include
+  code intelligence and system visibility, fit-to-standard analysis mapping custom code to SAP standard,
+  development acceleration for ABAP Cloud and BTP CAP, S/4HANA and Clean Core transformation support, and
+  security vulnerability identification, with claims of a 3x productivity boost at 50% lower cost. Nova is
+  an enterprise, demo-led product with no public API, developer portal, or SDKs at this time; it is backed
+  by Accel and Battery Ventures. This profile was enriched by the API Evangelist pipeline, which probed the
+  company''s public surface and found a domain-security posture and a Vanta trust center but no developer or
+  API artifacts to harvest.'
 url: https://raw.githubusercontent.com/api-evangelist/nova/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Ai
+- SAP
+- Agentic AI
+- Enterprise Software
+- Developer Productivity
+- Code Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nova-domain-security.yml
 - type: Website
   url: https://www.novaintelligence.com/
+- type: Blog
+  url: https://www.novaintelligence.com/blog
+- type: TrustCenter
+  url: https://app.vanta.com/novasoftware.ai/trust/p83comjtnonkkjycksuelo
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
